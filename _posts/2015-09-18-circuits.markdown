@@ -1,0 +1,7 @@
+---
+title: All My Circuits
+description: Work in progress.. Making a website to teach kids about electronics.
+img: /assets/img/allMycircuits.png
+img_height: 450
+site: http://asipple1.github.io/All-My-Circuits/
+---

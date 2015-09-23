@@ -1,0 +1,6 @@
+---
+title:  Aurora Massage Therapy
+img: /assets/img/massage.png
+img_height: 350
+site: http://asipple1.github.io/Aurora-Massage/
+---

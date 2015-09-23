@@ -32,3 +32,45 @@ body {
 .main-text p span {
   margin-right: 50px;
 }
+/*------ Work ----------*/
+
+.work {
+  margin-top: 50px;
+}
+.grid-item { 
+    width: 350px; 
+    margin-bottom: 20px;
+}
+.grid-item:hover { 
+    z-index: 9999;
+}
+.post-link {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    width: 350px;
+    margin: 0px 10px 15px 5px;
+    float: left;
+    background: white;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.4);
+    border: 3px solid white;
+}
+.blog-image {
+    width: 350px;
+    background-color: #eee;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    -webkit-transition: all 0.08s linear;
+    -moz-transition: all 0.08s linear;
+    transition: all 0.08s linear;
+    background-position: center center;
+  background-color: #000;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+.blog-image:hover {
+    top:150px;
+}
