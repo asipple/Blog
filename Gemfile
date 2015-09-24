@@ -1,8 +1,7 @@
 # A sample Gemfile
 source "https://rubygems.org"
-gem "jekyll"
-gem "s3_website"
-gem "rouge"
-gem "redcarpet"
-gem "pretty"
-gem "json"
+require 'json'
+require 'open-uri'
+versions = JSON.parse(open('https://pages.github.com/versions.json').read)
+
+gem 'github-pages', versions['github-pages']
