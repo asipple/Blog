@@ -190,8 +190,20 @@ body {
   text-shadow: 3px 3px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; }
 
 /*------ Work ----------*/
+#work {
+  background-color: #3498db;
+  padding: none;
+  border-width: 0 100vw 200px 0;
+  border-style: solid;
+  border-color: transparent transparent #fff transparent;
+  padding: none;
+  padding-left: 0;
+  padding-right: 0; }
+
 .work {
-  margin-top: 50px; }
+  margin-top: 50px;
+  margin-left: 150px !important;
+  margin-right: 150px !important; }
 
 .grid-item {
   width: 350px;
@@ -211,6 +223,11 @@ body {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.4);
   border: 3px solid white; }
 
+.post-link:hover {
+  text-decoration: none;
+  font-size: 20px;
+  color: #34495e; }
+
 .blog-image {
   width: 350px;
   background-color: #eee;
@@ -228,7 +245,11 @@ body {
   -o-background-size: cover; }
 
 .blog-image:hover {
-  top: 150px; }
+  top: 70px; }
+
+.post-info {
+  font-family: avenir next;
+  text-decoration: none; }
 
 @media screen and (max-width: 1080px) {
   .main-text {
@@ -243,3 +264,48 @@ body {
     -webkit-transform: rotate(90deg);
     -moz-transform: rotate(90deg);
     -ms-transform: rotate(90deg); } }
+/*------ Bio ----------*/
+.bio {
+  height: 90vh;
+  max-height: 740px;
+  min-height: 740px;
+  width: 100vw;
+  background-image: url("/assets/img/bioPhoto.png");
+  background-size: 850px;
+  background-repeat: no-repeat;
+  background-position: 100% 15%; }
+
+.skill-list {
+  list-style: none;
+  position: relative;
+  background-color: #f8f8fd;
+  -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.4), 0 0 20px rgba(0, 0, 0, 0.1) inset;
+  -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.4), 0 0 20px rgba(0, 0, 0, 0.1) inset;
+  -o-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.4), 0 0 20px rgba(0, 0, 0, 0.1) inset;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.4), 0 0 20px rgba(0, 0, 0, 0.1) inset; }
+
+.skill-list li {
+  display: block;
+  padding: 12px 15px;
+  border-bottom: 1px solid #c0c0c0;
+  font-size: 16px;
+  font-weight: bold; }
+
+/*--- contact ---*/
+.contact {
+  background: #30985A;
+  display: block;
+  width: 100%;
+  line-height: 2;
+  text-align: center;
+  font-size: 60px;
+  font-weight: 300;
+  transition: background 150ms ease-in-out; }
+
+.contact a {
+  color: #fff; }
+
+@media (max-width: 900px) {
+  .work {
+    margin-left: auto !important;
+    margin-right: auto !important; } }

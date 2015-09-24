@@ -1,6 +1,6 @@
 ---
 title: Intergalactic Space
-description: This was my first ruby on rails application. Wanted a place where people can post sweet pics about about space. SIGN UP!
+description: Ruby on Rails application.
 img: /assets/img/space.png
 img_height: 450
 site: http://intergalactic-space.herokuapp.com/
