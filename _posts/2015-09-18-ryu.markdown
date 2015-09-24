@@ -1,7 +1,0 @@
----
-title: Ryu Street Fighter
-description: Ryu Jquery street Fighter
-img: /assets/img/ryu-cool.gif
-img_height: 450
-site: http://asipple1.github.io/Ryu-Street-fighter-Jquery/main.html
----
