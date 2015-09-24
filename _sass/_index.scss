@@ -12,8 +12,12 @@ body {
   font-weight: 400;
   font-family: avenir next;
   color: #fff;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
   text-shadow: 3px 3px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-  /* Safari */
+         /* Safari */
 -webkit-transform: rotate(-20deg);
 
 /* Firefox */
@@ -32,6 +36,18 @@ body {
 .main-text p span {
   margin-right: 50px;
 }
+
+.main-text-info {
+  position: absolute;
+  top: 40%;
+  left: 0;
+  font-size: 2.75em;
+  font-weight: 400;
+  font-family: avenir next;
+  color: #fff;
+  text-shadow: 3px 3px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+  
 /*------ Work ----------*/
 
 .work {
@@ -74,3 +90,39 @@ body {
 .blog-image:hover {
     top:150px;
 }
+
+@media screen and (max-width: 1080px) {
+  .main-text {
+    position: absolute;
+    top: 49%;
+    left: -20%;
+    font-size: 2.5em;
+    font-weight: 400;
+    font-family: avenir next;
+    color: #fff;
+    text-shadow: 3px 3px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+}
+}
+//@keyframes rotating{
+//   from{
+//     -webkit-transform: rotate(0deg);
+//    -moz-transform: rotate(0deg);
+//    -ms-transform: rotate(0deg);
+//   }
+//   to{
+//       /* Safari */
+//-webkit-transform: rotate(-20deg);
+//
+///* Firefox */
+//-moz-transform: rotate(-20deg);
+//
+///* IE */
+//-ms-transform: rotate(-20deg);
+//   }
+//}
+//.main-text{
+//   -webkit-animation: rotating 2s forwards;
+//}
