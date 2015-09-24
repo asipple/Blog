@@ -1,7 +1,0 @@
----
-title: Intergalactic Space
-description: Ruby on Rails application.
-img: /assets/img/space.png
-img_height: 450
-site: http://intergalactic-space.herokuapp.com/
----
