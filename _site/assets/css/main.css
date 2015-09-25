@@ -3,6 +3,7 @@
   padding: 0;
   height: 0; }
 
+/*--- hamburger button ---*/
 .hamburger {
   position: relative;
   z-index: 1000; }
@@ -21,6 +22,7 @@
 .hamburger a:hover {
   font-size: 50px; }
 
+/*--- exit button ---*/
 .fa-times {
   color: #fff;
   margin: 7px 7px;
@@ -49,7 +51,8 @@
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
-  -o-background-size: cover; }
+  -o-background-size: cover;
+  position: relative; }
 
 #wrapper.toggled {
   padding-left: 250px; }
@@ -83,7 +86,7 @@
   position: absolute;
   margin-right: -250px; }
 
-/* Sidebar Styles */
+/*--- Sidebar Styles ---*/
 .sidebar-nav {
   width: 250px;
   margin: 100px 0;
@@ -126,6 +129,7 @@
   background: none;
   font-size: 40px; }
 
+/*--- media queries ---*/
 @media (min-width: 768px) {
   #wrapper {
     padding-left: 250px; }
@@ -151,10 +155,11 @@ body {
   height: 100%;
   margin: 0; }
 
+/*--- first section ---*/
 .main-text {
   position: absolute;
-  top: 40%;
-  left: 0;
+  top: 50%;
+  left: 30%;
   font-size: 2.75em;
   font-weight: 400;
   font-family: avenir next;
@@ -182,7 +187,7 @@ body {
 .main-text-info {
   position: absolute;
   top: 40%;
-  left: 0;
+  left: 30%;
   font-size: 2.75em;
   font-weight: 400;
   font-family: avenir next;
@@ -191,6 +196,9 @@ body {
 
 /*------ Work ----------*/
 #work {
+  background-color: #3498db; }
+
+.work-angle {
   background-color: #3498db;
   padding: none;
   border-width: 0 100vw 200px 0;
@@ -200,10 +208,8 @@ body {
   padding-left: 0;
   padding-right: 0; }
 
-.work {
-  margin-top: 50px;
-  margin-left: 150px !important;
-  margin-right: 150px !important; }
+#masonry-grid {
+  margin-top: 50px; }
 
 .grid-item {
   width: 350px;
@@ -251,29 +257,17 @@ body {
   font-family: avenir next;
   text-decoration: none; }
 
-@media screen and (max-width: 1080px) {
-  .main-text {
-    position: absolute;
-    top: 49%;
-    left: -20%;
-    font-size: 2.5em;
-    font-weight: 400;
-    font-family: avenir next;
-    color: #fff;
-    text-shadow: 3px 3px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-    -webkit-transform: rotate(90deg);
-    -moz-transform: rotate(90deg);
-    -ms-transform: rotate(90deg); } }
 /*------ Bio ----------*/
 .bio {
-  height: 90vh;
-  max-height: 740px;
-  min-height: 740px;
+  height: 500px;
   width: 100vw;
   background-image: url("/assets/img/bioPhoto.png");
   background-size: 850px;
   background-repeat: no-repeat;
-  background-position: 100% 15%; }
+  background-position: 100% 5%;
+  -webkit-transition: all 0.08s linear;
+  -moz-transition: all 0.08s linear;
+  transition: all 0.08s linear; }
 
 .skill-list {
   list-style: none;
@@ -298,14 +292,45 @@ body {
   width: 100%;
   line-height: 2;
   text-align: center;
-  font-size: 60px;
+  font-size: 20px;
   font-weight: 300;
   transition: background 150ms ease-in-out; }
 
 .contact a {
   color: #fff; }
 
-@media (max-width: 900px) {
-  .work {
-    margin-left: auto !important;
-    margin-right: auto !important; } }
+/*--- media queries ---*/
+@media screen and (max-width: 1180px) {
+  .main-text {
+    font-size: 2.5em;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg); } }
+@media screen and (max-width: 900px) {
+  .bio {
+    background-position: 300% 5%; } }
+@media screen and (max-width: 784px) {
+  .post-link {
+    width: 280px; }
+
+  .main-text {
+    left: 10%;
+    top: 48%; }
+
+  .main-text-info {
+    top: 20%;
+    left: 5%; }
+
+  .bio {
+    height: 350px;
+    max-height: 740px;
+    min-height: auto;
+    width: 200vh;
+    background-image: url("/assets/img/bioPhoto.png");
+    background-repeat: no-repeat;
+    background-size: 500px;
+    background-position: 150px 10px; } }
+@media screen and (max-width: 490px) {
+  .main-text {
+    left: -30%;
+    top: 48%; } }

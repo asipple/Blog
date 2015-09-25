@@ -4,7 +4,7 @@
   height: 0;
 }
 
-//-- hamburger button --//
+/*--- hamburger button ---*/
 .hamburger {
   position: relative;
   z-index: 1000;
@@ -27,7 +27,7 @@
 }
 
 
-//-- exit button --//
+/*--- exit button ---*/
 .fa-times {
   color: #fff;
   margin: 7px 7px;
@@ -58,6 +58,7 @@
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
+  position: relative;
 }
 
 #wrapper.toggled {
@@ -96,7 +97,8 @@
   position: absolute;
   margin-right: -250px;
 }
-/* Sidebar Styles */
+
+/*--- Sidebar Styles ---*/
 
 .sidebar-nav {
   width: 250px;
@@ -131,8 +133,7 @@
 
 .sidebar-nav > .sidebar-brand {
   font-size: 20px;
-  line-height: 80px;
-  
+  line-height: 80px; 
 }
 
 .sidebar-nav > .sidebar-brand a {
@@ -149,6 +150,7 @@
   font-size: 40px;
 }
 
+/*--- media queries ---*/
 
 @media (min-width:768px) {
   #wrapper {
