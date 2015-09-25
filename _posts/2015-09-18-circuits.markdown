@@ -1,7 +1,7 @@
 ---
 title: All My Circuits
 description: Work in progress..
-img: /assets/img/allMycircuits.png
+img: /Blog/assets/img/allMycircuits.png
 img_height: 450
 site: http://asipple1.github.io/All-My-Circuits/
 ---

@@ -2,7 +2,7 @@
 layout: post
 title:  The Oven
 description: The Oven website made using jekyll
-img: /assets/img/theOven.png
+img: /Blog/assets/img/theOven.png
 img_height: 350
 width: 400
 date:   2015-09-18
