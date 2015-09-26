@@ -5,21 +5,18 @@ body {
 }
 /*--- first section ---*/
 
-.main-text {
+.main-text-info {
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 30%;
   font-size: 2.75em;
+  letter-spacing: 5px;
   font-weight: 400;
-  font-family: avenir next;
+  //  font-family: avenir next;
+  font-family: 'Bad Script', cursive;
+  font-family: 'Amatic SC', cursive;
   color: #fff;
-  -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  transition: all 0.5s ease;
   text-shadow: 3px 3px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-  /* Safari */
-  
   -webkit-transform: rotate(-20deg);
   /* Firefox */
   
@@ -27,27 +24,6 @@ body {
   /* IE */
   
   -ms-transform: rotate(-20deg);
-}
-
-.main-text p {
-  text-transform: uppercase;
-  text-align: center;
-  padding: 10px;
-}
-
-.main-text p span {
-  margin-right: 50px;
-}
-
-.main-text-info {
-  position: absolute;
-  top: 40%;
-  left: 30%;
-  font-size: 2.75em;
-  font-weight: 400;
-  font-family: avenir next;
-  color: #fff;
-  text-shadow: 3px 3px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 /*------ Work ----------*/
 
@@ -190,14 +166,6 @@ body {
   .post-link {
     width: 280px;
   }
-  .main-text {
-    left: 10%;
-    top: 48%;
-  }
-  .main-text-info {
-    top: 20%;
-    left: 5%;
-  }
   .bio {
     height: 350px;
     max-height: 740px;
@@ -209,10 +177,13 @@ body {
     background-position: 150px 10px;
   }
 }
+/* Portrait */
 
-@media screen and (max-width: 490px) {
-  .main-text {
-    left: -30%;
-    top: 48%;
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+  .main-text-info{
+    top: 30%;
   }
 }
+/* Landscape */
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {}
