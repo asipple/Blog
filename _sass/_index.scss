@@ -36,7 +36,7 @@ body {
   padding: none;
   border-width: 0 100vw 200px 0;
   border-style: solid;
-  border-color: transparent transparent #fff transparent;
+  border-color: transparent #fff transparent;
   padding: none;
   padding-left: 0;
   padding-right: 0;
@@ -101,10 +101,10 @@ body {
 /*------ Bio ----------*/
 
 .bio {
-  height: 500px;
+  height: 400px;
   width: 100vw;
   background-image: url("/Blog/assets/img/bioPhoto.png");
-  background-size: 850px;
+  background-size: 500px;
   background-repeat: no-repeat;
   background-position: 100% 5%;
   -webkit-transition: all 0.08s linear;
@@ -157,32 +157,30 @@ body {
 }
 
 @media screen and (max-width: 900px) {
-  .bio {
-    background-position: 300% 5%;
-  }
+//  .bio {
+//    background-position: 300% 5%;
+//  }
 }
 
 @media screen and (max-width: 784px) {
   .post-link {
     width: 280px;
   }
-  .bio {
-    height: 350px;
-    max-height: 740px;
-    min-height: auto;
-    width: 200vh;
-    background-image: url("/Blog/assets/img/bioPhoto.png");
-    background-repeat: no-repeat;
-    background-size: 500px;
-    background-position: 150px 10px;
-  }
+//  .bio {
+//    height: 350px;
+//    max-height: 740px;
+//    min-height: auto;
+//    width: 200vh;
+//    background-image: url("/Blog/assets/img/bioPhoto.png");
+//    background-repeat: no-repeat;
+//    background-size: 500px;
+//    background-position: 150px 10px;
+//  }
 }
 /* Portrait */
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
-  .main-text-info{
-    top: 30%;
-  }
+  
 }
 /* Landscape */
 
