@@ -99,35 +99,25 @@ body {
   text-decoration: none;
 }
 /*------ Bio ----------*/
-
+#bio {
+  padding-left: 0;
+  padding-right: 0;
+}
 .bio {
+  margin-top: 75px;
+  margin-left: 75px;
+//  height: 400px;
+//  width: 100vw;
+//  background-image: url("/Blog/assets/img/bioPic.jpg");
+//  background-size: 500px;
+//  background-repeat: no-repeat;
+//  background-position: 100% 5%;
+//  -webkit-transition: all 0.08s linear;
+//  -moz-transition: all 0.08s linear;
+//  transition: all 0.08s linear;
+}
+.me-bio {
   height: 400px;
-  width: 100vw;
-  background-image: url("/Blog/assets/img/bioPhoto.png");
-  background-size: 500px;
-  background-repeat: no-repeat;
-  background-position: 100% 5%;
-  -webkit-transition: all 0.08s linear;
-  -moz-transition: all 0.08s linear;
-  transition: all 0.08s linear;
-}
-
-.skill-list {
-  list-style: none;
-  position: relative;
-  background-color: #f8f8fd;
-  -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.4), 0 0 20px rgba(0, 0, 0, 0.1) inset;
-  -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.4), 0 0 20px rgba(0, 0, 0, 0.1) inset;
-  -o-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.4), 0 0 20px rgba(0, 0, 0, 0.1) inset;
-  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.4), 0 0 20px rgba(0, 0, 0, 0.1) inset;
-}
-
-.skill-list li {
-  display: block;
-  padding: 12px 15px;
-  border-bottom: 1px solid #c0c0c0;
-  font-size: 16px;
-  font-weight: bold;
 }
 /*--- contact ---*/
 
@@ -165,6 +155,10 @@ body {
 @media screen and (max-width: 784px) {
   .post-link {
     width: 280px;
+  }
+  .bio {
+  margin-top: 25px;
+  margin-left: 0;
   }
 //  .bio {
 //    height: 350px;
