@@ -79,9 +79,9 @@ body {
   position: absolute;
   top: 0px;
   left: 0px;
-  -webkit-transition: all 0.08s linear;
-  -moz-transition: all 0.08s linear;
-  transition: all 0.08s linear;
+  -webkit-transition: 750ms cubic-bezier(.23,1,.32,1);
+  -moz-transition: 750ms cubic-bezier(.23,1,.32,1);
+  transition: 750ms cubic-bezier(.23,1,.32,1);
   background-position: center center;
   background-color: #000;
   -webkit-background-size: cover;
@@ -186,3 +186,32 @@ body {
 /* Landscape */
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {}
+
+
+.element:after {
+  content: ' |';
+  display: inline;
+  color: #fff;
+  -webkit-animation: blink .7s infinite;
+  animation: blink .7s infinite;
+  opacity: 1;
+  -webkit-animation: blink .7s infinite;
+  animation: blink .7s infinite;
+  font-weight: normal;
+}
+
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
